@@ -1,0 +1,19 @@
+{
+  "name": "expresscontacts",
+  "version": "1.0.0",
+  "description": "A contacts management subsystem",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/btaanish/expressContacts.git"
+  },
+  "author": "Taanish Bhardwaj",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/btaanish/expressContacts/issues"
+  },
+  "homepage": "https://github.com/btaanish/expressContacts#readme"
+}
