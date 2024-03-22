@@ -1,17 +1,16 @@
-const express = require("express");
-const {
-  registerUser,
-  currentUser,
-  loginUser,
-} = require("../controllers/userController");
-const validateToken = require("../middleware/validateTokenHandler");
+import express from 'express';
+import { registerUser, currentUser, loginUser } from '../controllers/userController.js';
+import validateToken from '../middleware/validateTokenHandler.js';
 
 const router = express.Router();
 
-router.post("/register", registerUser);
+// Route to handle new user registration
+router.post('/register', registerUser);
 
-router.post("/login", loginUser);
+// Route for user login
+router.post('/login', loginUser);
 
-router.get("/current", validateToken, currentUser);
+// Route to get the current user's profile, protected by token validation
+router.get('/current', validateToken, currentUser);
 
-module.exports = router;
+export default router;
